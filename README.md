@@ -1,77 +1,83 @@
-# 🧠 AutoEvalForge
+# Prompt-AutoOptimizer: End-to-End Prompt Experimentation, Ranking & Deployment Platform
 
-**Interactive Prompt Optimization + Evaluation + Auto-Retrain Framework for LLMs**
+## Abstract
 
----
-
-## 🗒️ Abstract
-
-AutoEvalForge is a production-grade, full MLOps Level 4 platform for experimenting with prompts, evaluating model responses, and triggering fine-tuning automatically on poor-performing prompts. It supports advanced prompt engineering techniques (Chain-of-Thought, Few-Shot, ReAct), visual metrics (BLEU, BERTScore), and live deployment with a complete CI/CD pipeline using free cloud services.
+*(Draft: up to 300 words describing the problem, approach, and key results)*
 
 ---
 
-## 📊 Live Demos (Coming Soon)
+## Table of Contents
 
-- 🔗 [Frontend (Vercel)](https://autoevalforge.vercel.app)
-- 🔗 [Backend (Render)](https://autoevalforge-api.onrender.com)
-- 🔗 [Model (HuggingFace)](https://huggingface.co/AutoEvalForge)
-- 📽️ [Short Demo Video](https://youtube.com/xyz)
-- 📽️ [Full Presentation (Team)](https://youtube.com/xyz-long)
-
----
-
-## 🧑‍🤝‍🧑 Team Members
-
-| Name | Role |
-|------|------|
-| Alice | Frontend UX + Prompt Engineering |
-| Bob | Backend APIs + Model Evaluation |
-| You | Model Training + CI/CD + MLOps Integration |
+1. [Project Structure](#project-structure)
+2. [Setup Instructions](#setup-instructions)
+3. [Usage](#usage)
+4. [Pipeline Overview](#pipeline-overview)
+5. [File Descriptions](#file-descriptions)
+6. [Team Contributions](#team-contributions)
+7. [Links & Artifacts](#links--artifacts)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
-- `frontend/`: React UI with prompt tools and evaluation dashboards
-- `backend/`: FastAPI backend for inference, evaluation, and training
-- `training/`: Model finetuning on datasets like SQuAD and SamSum
-- `infra/`: CI/CD workflows, cloud deployment hooks
-- `notebooks/`: Visualizations, analysis, and testing
-
----
-
-## 📦 Model Details
-
-- Base Models: `google/flan-t5-small`, `tiiuae/falcon`, `mistralai/Mistral-7B-Instruct`
-- Tasks: Summarization, Q&A, Code Explanation, Roleplay
-- Metrics: BLEU, BERTScore, Token Usage, Inference Cost
-- Visualization: TensorBoard + Weights & Biases (W&B)
-
----
-
-## ⚙️ MLOps Features
-
-| Level | Capabilities |
-|-------|--------------|
-| 2️⃣ | Automated Training Pipeline |
-| 3️⃣ | Automated Deployment with CI/CD |
-| 4️⃣ | Monitoring, Drift Detection, Retraining, Metric Dashboards |
-
----
-
-## 📌 Future Plans
-
-- ✅ Prompt leaderboard + feedback loop
-- ✅ Token + cost estimators
-- ✅ Model drift graph
-- ✅ Auto-CoT + Reflection support
-- ✅ TPU deployment bonus (if compute permits)
+```
+├── backend/
+│   ├── app/
+│   │   ├── api/
+│   │   ├── models/
+│   │   ├── services/
+│   │   ├── data/
+│   │   └── main.py
+│   ├── Dockerfile
+│   └── requirements.txt
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.ts
+├── pipelines/
+│   ├── vertex_pipeline.py
+│   └── tfx_pipeline.py
+├── notebooks/
+│   ├── 1_data_prep.ipynb
+│   ├── 2_ranking_training.ipynb
+│   └── 3_experiments.ipynb
+├── docs/
+│   ├── architecture_diagram.png
+│   └── team_contributions.md
+├── slides/
+│   ├── project_slides.pdf
+│   └── video_demo_links.md
+├── README.md
+└── paper.pdf
+```
 
 ---
 
-## 📚 References & Credits
+## Setup Instructions
 
-- [BLEU/BERTScore](https://huggingface.co/spaces/evaluate-metric)
-- [MLOps Resources](https://github.com/visenger/awesome-mlops)
-- [Prompting Strategies](https://github.com/f/awesome-chatgpt-prompts)
-- [SQuAD Dataset](https://rajpurkar.github.io/SQuAD-explorer/)
+*(Detailed steps to clone the repo, install dependencies, and configure environment variables)*
+
+## Usage
+
+*(Commands to run backend server, start frontend, execute pipelines, etc.)*
+
+## Pipeline Overview
+
+*(High-level description of Vertex AI / TFX pipelines, CI/CD triggers, auto-retrain workflows)*
+
+## File Descriptions
+
+*(Brief summary of each directory and key files)*
+
+## Team Contributions
+
+*(Table outlining each member’s role and deliverables)*
+
+## Links & Artifacts
+
+* **Live Demo:** [Frontend on Vercel](#)
+* **API Endpoint:** [Render Endpoint](#)
+* **Colab Notebooks:** [Data Prep](#), [Training](#), [Experiments](#)
+* **Slides & Videos:** [Slide Deck](#), [Presentation Video](#)
+* **Model Registry:** [MLflow](#) / [Vertex Model Hub](#)
